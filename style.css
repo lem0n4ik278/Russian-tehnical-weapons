@@ -1,0 +1,115 @@
+h1{
+    color:yellowgreen;
+    font-size: 50px;
+    text-align:center;
+}
+
+p{
+    color:rgb(37, 187, 179);
+    font-size: 16px;
+    
+}
+
+li{
+    color:rgb(34, 0, 255);
+}
+
+body{
+    background: url("https://avatars.mds.yandex.net/i?id=6ad7a576d9a6a3fde3572bcdd6f532e65d542dca-8486579-images-thumbs&n=13");
+}
+
+header{
+    background-color: rgb(69, 175, 74);
+    font-family: Noto Sans, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+.home{
+    background-color: rgb(0, 0, 0);
+    font-family: Noto Sans, sans-serif;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.morskaya-pehota{
+    background-color: rgb(2, 0, 109);
+    font-family: Noto Sans, sans-serif;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid rgb(28, 17, 92);
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.suhopotnye-sily{
+    background-color: rgb(0, 128, 0);
+    font-family: Noto Sans, sans-serif;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid rgb(0, 100, 0);
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+a {
+    color:rgb(143, 21, 68);
+    background-color: rgba(102, 102, 102, 0.479);
+    text-decoration: none; 
+    border: 2px solid rgb(18, 115, 172);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+.vozdushnye-sily{
+    background-color: rgb(8, 197, 240);
+    font-family: Noto Sans, sans-serif;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid rgb(8, 197, 240);
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.contact{
+    background-color: rgb(0, 0, 0);
+    font-family: Noto Sans, sans-serif;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+footer{
+    background-color: rgb(0, 0, 0);
+    font-family: Noto Sans, sans-serif;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin:0 auto;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}

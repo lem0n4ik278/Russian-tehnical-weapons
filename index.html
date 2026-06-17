@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Российские технические вооруженные силы</title>
+   <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
     <header>
@@ -16,7 +17,7 @@
     </header>
        <hr>
     <main>
-        <section id="home">
+        <section id="home" class="home">
             <h1>Главное</h1>
             <p>Россиские технические воруженные силы - это комплекс вооруженных сил, который включает в себя сухопотные силы, воздушные силы и морскую пехоту. Эти силы играют важную роль в обеспечении безопасности и обороны страны, а также в поддержании мира и стабильности в регионе.</p>
             <ol>
@@ -26,7 +27,7 @@
             </ol>
         </section>
         <hr>
-        <section id="suhopotnye-sily">
+        <section id="suhopotnye-sily" class="suhopotnye-sily">
             <h1>Сухопотные силы</h1>
             <div>
                 <h2 style=text-align:center>БМПТ-90</h2>
@@ -58,7 +59,7 @@
             </div>
             <div>
                 <h2>семейство Т-90</h2>
-                <button><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/T-90MS_Armed_Forces_of_Russia_01.jpg/800px-T-90MS_Armed_Forces_of_Russia_01.jpg" style="width: 500px; height: 300px; display: block; margin: 0 auto;" alt="семейство Т-90"></button>
+                <button><img src="https://avatars.mds.yandex.net/get-entity_search/5449393/1244569614/SUx182_2x" style="width: 500px; height: 300px; display: block; margin: 0 auto;" alt="семейство Т-90"></button>
                 <hr>
                 <p>Т-90 - это российский основной боевой танк, который является развитием предыдущих моделей Т-72 и Т-80. Он был разработан для обеспечения высокой боевой эффективности на поле боя и оснащен современными системами вооружения и защиты.</p>
                 <p>Т-90 имеет мощное вооружение, включая 125-мм гладкоствольную пушку, которая может использовать различные типы боеприпасов, включая бронебойные и кумулятивные снаряды. Он также оснащен современными системами управления огнем, что позволяет эффективно поражать цели на больших расстояниях.</p>
@@ -76,6 +77,7 @@
                     <li>Запас хода: около 550 км</li>
                 </ul>
                 <h2>Т-90К</h2>
+                <img src="https://ic.pics.livejournal.com/andrei_bt/18425682/2334527/2334527_800.jpg" style="width: 500px; height: 300px; display: block; margin: 0 auto;" alt="Т-90К">
                 <p>Т-90К - это улучшенная версия танка Т-90, которая была разработана для повышения его боевой эффективности и защиты. Она оснащена улучшенными системами вооружения и защиты, что делает ее более мощной и многофункциональной боевой машиной,появился это модернизация в 1992-ом году.
                 </p>
                 <h2>Технические характеристики Т-90К:</h2>
@@ -93,16 +95,18 @@
                     <li>также было добавлено вспомогательный агрегат питание.</li>
                 </ul>
                 <h2>Т-90C</h2>
+                <img src="https://sdelanounas.ru/i/d/3/d3d3LnBpY3NoYXJlLnJ1L3VwbG9hZHMvMTMwMjIyL2IzMGFoNzdrUUsuanBnP19faWQ9Mjk0MjI=.jpg" style="width: 500px; height: 300px; display: block; margin: 0 auto;" alt="Т-90C">
                 <p>Т-90C - этот вид использовался для экспорта и отличался от стандартной версии Т-90 более мощным вооружением и улучшенной системой защиты.</p>
                 </div>
                 <div>
                     <h2>T-90CK</h2>
+                    <img src="https://roe.ru/upload/iblock/0e6/cocpn7yg52hts6p3t4lrx42gzvcxhis6.jpg" style="width: 500px; height: 300px; display: block; margin: 0 auto;" alt="T-90CK">
                 </div>
-
+                <a href="#home">Вернутся главное</a>
             </div>
         </section>
             <hr>
-        <section id="vozdushnye-sily">
+        <section id="vozdushnye-sily" class="vozdushnye-sily">
             <h1>Воздушные силы</h1>
         <div>
             <h2>Истребители</h2>
@@ -121,7 +125,7 @@
         </div>
         </section>
             <hr>
-        <section id="morskaya-pehota">
+        <section id="morskaya-pehota" class="morskaya-pehota">
             <h1>военно-Морская флот</h1>   
             <div>
                 <h2>основные виды кораблей</h2>
@@ -144,33 +148,33 @@
 
         </section>
                 <hr>
-            <section id="contact">
+            <section id="contact" class="contact">
                 <h1>Контакты</h1>
                 <p>Для получения дополнительной информации о Россиских технических воруженных силах, пожалуйста, свяжитесь с нами по следующим контактным данным:</p>
                 <ul>
                     <li>Телефон: +7 (123) 456-7890</li>
                     <li>Email: info@russianmilitary.ru</li>
                 </ul>
+                    <h4>ОПРОС</h4>
+            <form>
+                <label for="name">Твое имя:</label>
+                <br>
+                <input id="name" type="text" placeholder="Имя">
+                <br>
+                <label for="email">email:</label>
+                <br>
+                <input id="email" type="email" placeholder="email">
+                <br>
+                <label for="message">Что мне добавить в следующий раз:</label>
+                <br>
+                <textarea id="message" placeholder="напишите сообщение"></textarea>
+            </form>
             </section>
-            
-    <h4>ОПРОС</h4>
-    <form>
-        <label for="name">Твое имя:</label>
-        <br>
-        <input id="name" type="text" placeholder="Имя">
-        <br>
-        <label for="email">email:</label>
-        <br>
-        <input id="email" type="email" placeholder="email">
-        <br>
-        <label for="message">Что мне добавить в следующий раз:</label>
-        <br>
-        <textarea id="message" placeholder="напишите сообщение"></textarea>
-    </form>
     </main>
     <footer>
         <p>&copy; 2023 Россиские технические воруженные силы. Все права защищены.</p>
     </footer>
+
 
 </body>
 </html>
