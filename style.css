@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 h1{
     color:yellowgreen;
     font-size: 50px;
@@ -16,9 +24,26 @@ li{
 
 body{
     background: url("https://avatars.mds.yandex.net/i?id=6ad7a576d9a6a3fde3572bcdd6f532e65d542dca-8486579-images-thumbs&n=13");
+    margin: 0;
+    padding: 0;
 }
 
 header{
+    background-color: rgb(69, 175, 74);
+    font-family: Noto Sans, sans-serif;
+    text-align: center;
+    padding: 20px;
+
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+header:hover{
     background-color: rgb(69, 175, 74);
     font-family: Noto Sans, sans-serif;
     text-align: center;
@@ -34,6 +59,7 @@ header{
     border-radius: 10px;
     max-width: 800px;
     margin: 0 auto;
+    width: calc(100% - 32px);
 }
 
 .morskaya-pehota{
@@ -46,6 +72,7 @@ header{
     border-radius: 10px;
     max-width: 800px;
     margin: 0 auto;
+    width: calc(100% - 32px);
 }
 
 .suhopotnye-sily{
@@ -58,6 +85,7 @@ header{
     border-radius: 10px;
     max-width: 800px;
     margin: 0 auto;
+    width: calc(100% - 32px);
 }
 
 a {
@@ -81,6 +109,7 @@ a {
     border-radius: 10px;
     max-width: 800px;
     margin: 0 auto;
+    width: calc(100% - 32px);
 }
 
 img {
@@ -90,6 +119,20 @@ img {
     height: auto;
     padding: 10px;
     margin-bottom: 20px;
+}
+
+button {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+
+img {
+    width: min(100%, 500px);
+    height: auto;
 }
 
 .contact{
@@ -102,6 +145,7 @@ img {
     border-radius: 10px;
     max-width: 800px;
     margin: 0 auto;
+    width: calc(100% - 32px);
 }
 footer{
     background-color: rgb(0, 0, 0);
@@ -113,3 +157,84 @@ footer{
     border: 2px solid rgb(0, 0, 0);
     border-radius: 10px;
 }
+
+@keyframes fadeIn {
+    from { opacity: 0; 
+    transform: translateY(20px);
+    }
+    to { opacity: 1;
+    transform: translateY(0);
+    }
+}
+
+@keyframes roate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@media (max-width: 700px) {
+    body {
+        background-size: cover;
+        background-attachment: scroll;
+    }
+
+    h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    header {
+        padding: 20px 12px;
+    }
+
+    nav a {
+        width: auto;
+        display: inline-block;
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    main section {
+        padding: 16px;
+        margin: 12px auto;
+    }
+
+    button,
+    button img{
+        width: 100%;
+    }
+
+    p, li {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    
+}
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 22px;
+    right: 22px;
+    z-index: 9999;
+    width: 52px;
+    height: 52px;
+    padding: 0;
+    color: var(--white);
+    font-size: 26px;
+    font-size: 26px;
+    line-height: 1;
+    border: 2px solid rgba(255, 255, 255, 0.45);
+    border-radius: 50%;
+    background: var(--red);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.993);
+
+}
+
+.tankinfo {
+    margin: 18px 0;
+    padding: 16px;
+    border: 1px solid rgb(63, 151, 151);
+    border-radius: 16px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.5);
+}
+
