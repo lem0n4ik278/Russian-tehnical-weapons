@@ -229,3 +229,369 @@ footer{
     box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.5);
 }
 
+:root {
+    --page-bg: #0d1117;
+    --page-panel: rgba(14, 20, 26, 0.92);
+    --page-panel-strong: rgba(8, 12, 16, 0.97);
+    --page-border: rgba(163, 187, 133, 0.24);
+    --page-accent: #b7d67e;
+    --page-accent-strong: #e2efab;
+    --page-text: #eef3e8;
+    --page-muted: #bcc7b2;
+}
+
+body {
+    background:
+        radial-gradient(circle at top, rgba(183, 214, 126, 0.16), transparent 30%),
+        linear-gradient(180deg, rgba(6, 10, 14, 0.97), rgba(13, 17, 23, 0.98)),
+        url("https://avatars.mds.yandex.net/i?id=6ad7a576d9a6a3fde3572bcdd6f532e65d542dca-8486579-images-thumbs&n=13");
+    background-attachment: fixed;
+    background-size: cover;
+    color: var(--page-text);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background: linear-gradient(135deg, rgba(18, 26, 18, 0.97), rgba(41, 58, 26, 0.95));
+    border-bottom: 1px solid var(--page-border);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+    color: var(--page-accent-strong);
+    font-size: clamp(2.2rem, 4vw, 3.4rem);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.page-subtitle,
+p {
+    color: var(--page-muted);
+}
+
+main {
+    width: min(1100px, calc(100% - 32px));
+    margin: 28px auto 40px;
+}
+
+.page-intro,
+.section-nav,
+.equipment-card,
+.tankinfo,
+footer {
+    border: 1px solid var(--page-border);
+    background: var(--page-panel);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(8px);
+}
+
+.page-intro,
+.section-nav,
+.equipment-card {
+    border-radius: 22px;
+}
+
+.page-intro {
+    padding: 24px;
+    margin-bottom: 18px;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-intro h2,
+.equipment-card h2 {
+    color: var(--page-accent-strong);
+    text-align: center;
+}
+
+.eyebrow {
+    margin: 0 0 10px;
+    color: var(--page-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.section-nav {
+    padding: 12px;
+    margin-bottom: 22px;
+}
+
+.tactical-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.tactical-strip span,
+.vehicle-tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(183, 214, 126, 0.24);
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--page-accent-strong);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.vehicle-tag {
+    margin: 0 auto 10px;
+    width: fit-content;
+}
+
+.section-nav a,
+header nav a {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--page-text);
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+.equipment-section {
+    margin-bottom: 22px;
+}
+
+.equipment-card {
+    padding: 20px;
+    position: relative;
+}
+
+.equipment-card::after {
+    content: "";
+    position: absolute;
+    inset: auto 18px 18px auto;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, rgba(183, 214, 126, 0.16), transparent 72%);
+    pointer-events: none;
+}
+
+main section img {
+    border-radius: 18px;
+    border: 1px solid rgba(183, 214, 126, 0.28);
+    background: rgba(0, 0, 0, 0.35);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.35);
+}
+
+.tankinfo {
+    margin: 18px 0 0;
+    padding: 18px;
+    border-radius: 16px;
+    background:
+        linear-gradient(180deg, rgba(183, 214, 126, 0.06), transparent),
+        var(--page-panel-strong);
+    position: relative;
+}
+
+.tankinfo::before {
+    content: "dossier";
+    position: absolute;
+    top: -10px;
+    left: 16px;
+    padding: 2px 10px;
+    border-radius: 999px;
+    background: #0b1015;
+    border: 1px solid rgba(183, 214, 126, 0.28);
+    color: var(--page-accent);
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.tankinfo a {
+    display: inline-block;
+    margin: 10px 0 0;
+}
+
+a {
+    color: var(--page-accent-strong);
+    background-color: rgba(86, 107, 55, 0.35);
+    border: 1px solid rgba(183, 214, 126, 0.32);
+    border-radius: 999px;
+    transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+a:hover {
+    transform: translateY(-1px);
+    background-color: rgba(183, 214, 126, 0.18);
+    border-color: rgba(226, 239, 171, 0.6);
+}
+
+.page-intro::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(130deg, rgba(183, 214, 126, 0.08), transparent 40%, rgba(0, 0, 0, 0.05));
+    pointer-events: none;
+}
+
+.page-intro > * {
+    position: relative;
+    z-index: 1;
+}
+
+.air-division {
+    position: relative;
+    overflow: hidden;
+}
+
+.air-division::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at top right, rgba(123, 186, 255, 0.14), transparent 26%),
+        radial-gradient(circle at bottom left, rgba(183, 214, 126, 0.08), transparent 24%);
+    pointer-events: none;
+}
+
+.air-division > * {
+    position: relative;
+    z-index: 1;
+}
+
+.air-division h1 {
+    color: #a9d8ff;
+    text-shadow: 0 0 22px rgba(123, 186, 255, 0.18);
+}
+
+.air-division h2,
+.air-division h3 {
+    text-align: center;
+}
+
+.air-division .tankinfo {
+    background:
+        linear-gradient(180deg, rgba(123, 186, 255, 0.06), transparent),
+        var(--page-panel-strong);
+    border-color: rgba(123, 186, 255, 0.22);
+}
+
+.air-division .tankinfo::before {
+    content: "flight log";
+    color: #a9d8ff;
+    border-color: rgba(123, 186, 255, 0.26);
+}
+
+.air-division .vehicle-tag,
+.air-division .tactical-strip span {
+    color: #d7ecff;
+    border-color: rgba(123, 186, 255, 0.24);
+    background: rgba(123, 186, 255, 0.08);
+}
+
+.air-division main section img,
+.air-division img {
+    border-color: rgba(123, 186, 255, 0.26);
+}
+
+.air-division a:hover {
+    background-color: rgba(123, 186, 255, 0.18);
+    border-color: rgba(183, 228, 255, 0.6);
+}
+
+footer {
+    color: var(--page-muted);
+    width: min(1100px, calc(100% - 32px));
+    margin: 20px auto;
+    padding: 14px;
+    border-radius: 14px;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background:
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 72px 72px;
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.85), transparent 92%);
+    opacity: 0.28;
+}
+
+header {
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(115deg, transparent 0%, rgba(183, 214, 126, 0.08) 35%, transparent 70%);
+    pointer-events: none;
+}
+
+h1 {
+    text-shadow: 0 0 22px rgba(226, 239, 171, 0.16);
+}
+
+.page-intro,
+.equipment-card,
+.tankinfo,
+.section-nav,
+footer {
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.page-intro:hover,
+.equipment-card:hover,
+.tankinfo:hover {
+    transform: translateY(-2px);
+    border-color: rgba(226, 239, 171, 0.42);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.34);
+}
+
+.equipment-card {
+    overflow: hidden;
+}
+
+main section img {
+    transition: transform 0.25s ease, filter 0.25s ease, border-color 0.25s ease;
+    filter: saturate(1.08) contrast(1.05);
+}
+
+.equipment-card:hover img {
+    transform: scale(1.015);
+    filter: saturate(1.15) contrast(1.08);
+}
+
+.section-nav a,
+header nav a {
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.section-nav a:hover,
+header nav a:hover {
+    background: rgba(183, 214, 126, 0.2);
+}
+
+.equipment-card:hover::after {
+    background: radial-gradient(circle, rgba(226, 239, 171, 0.22), transparent 72%);
+}
+
+@media (max-width: 700px) {
+    main {
+        width: min(100%, calc(100% - 20px));
+        margin-top: 18px;
+    }
+
+    .page-intro,
+    .section-nav,
+    .equipment-card {
+        border-radius: 16px;
+        padding: 16px;
+    }
+}
+

@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Российские технические вооруженные силы</title>
+    <title>Русская военная техника</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
     <header>
-        <h1> Россиские технические воруженные силы</h1>
+        <h1> Русская военная техника</h1>
         <nav>
-            <a href="#home">Главное</a>
-            <a href="#suhopotnye-sily">Сухопотные силы</a>
-            <a href="#vozdushnye-sily">Воздушные силы</a>
-            <a href="#morskaya-pehota">Морская пехота</a>
-            <a href="#contact">Контакты</a>
+            <a href="index.html">Главная</a>
+            <a href="Suhoputnie.html">Сухопутная техника</a>
+            <a href="vozdushnye/index.html">Воздушная техника</a>
+            
         </nav>
     </header>
        <hr>
@@ -32,33 +31,9 @@
             <h1>Сухопотные силы</h1>
             <div>
                 <h2 style=text-align:center>БМПТ-90</h2>
+                <span class="vehicle-tag">01 / stealth fighter</span>
                 <img class="tankimg" src="https://upload.wikimedia.org/wikipedia/commons/8/84/BMPT_at_Engineering_Technologies_2012_%283%29.jpg" alt="БМПТ-90">
                 <hr>
-                <div class="tankinfo" hidden>
-                <p>БМПТ-90 (Боевая Машина Бронетранспортер) - это российская боевая машина, разработанная для перевозки пехоты 
-                    и обеспечения огневой поддержки на поле боя. Она оснащена мощным вооружением и броней, что делает ее эффективной 
-                    в различных боевых условиях.</p>
-                <p>БМПТ-90 имеет высокую проходимость и может преодолевать различные препятствия, что позволяет ей эффективно
-                    выполнять задачи в различных условиях. Она также оснащена современными системами связи и навигации, что обеспечивает 
-                    эффективное взаимодействие с другими подразделениями на поле боя.</p>
-                <p>БМПТ-90 является важным элементом вооруженных сил России и играет ключевую роль в обеспечении безопасности и обороны страны. 
-                    Ее разработка и производство продолжаются, чтобы обеспечить современное вооружение для российских войск.</p>
-                <h2>Технические характеристики БМПТ-90:</h2>
-                <hr>
-                <ul>
-                    <li>Масса: около 48 тонн</li>
-                    <li>Длина: 7,2 метра</li>
-                    <li>Ширина: 3,4 метра</li>
-                    <li>Высота: 2,9 метра</li>
-                    <li>Экипаж: 3 человека + 7 десантников</li>
-                    <li>Вооружение: 30-мм автоматическая пушка, 7,62-мм пулемет, противотанковый ракетный комплекс с моделем 'Атака-Т' и также 40-мм автоматический гранатомет АГС-17</li>
-                    <li>Максимальная скорость: около 60 км/ч</li>
-                    <li>Запас хода: около 550 км</li>
-                </ul>
-                <h2>Заключение </h2>
-                <p>БМПТ-90 является мощной и многофункциональной боевой машиной, которая обеспечивает высокую защиту и огневую поддержку для пехоты на поле боя. Ее технические характеристики делают ее эффективным инструментом для выполнения различных боевых задач, и она продолжает играть важную роль в вооруженных силах России.</p>
-                
-                <a href="https://ru.wikipedia.org/wiki/БМПТ-90">Подробнее</a>
                 </div>
             </div>
             <div>
@@ -107,9 +82,20 @@
             </div>
         </section>
             <hr>
-        <section id="vozdushnye-sily" class="vozdushnye-sily">
+        <section id="vozdushnye-sily" class="vozdushnye-sily air-division">
             <h1>Воздушные силы</h1>
+            <div class="page-intro">
+                <p class="eyebrow">Воздушное превосходство</p>
+                <h2>Истребители и штурмовики</h2>
+                <p>Раздел оформлен в том же экспериментальном стиле, чтобы самолеты выглядели как отдельные досье с акцентом на скорость и маневр.</p>
+                <div class="tactical-strip">
+                    <span>скорость</span>
+                    <span>маневр</span>
+                    <span>ударная мощь</span>
+                </div>
+            </div>
             <h2>Истребители</h2>
+                <span class="vehicle-tag">01 / stealth fighter</span>
                 <h3>Су-57</h3>
                 <img class="tankimg" src="data:image/jpeg;base64,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">
                 <div class="tankinfo" hidden>
@@ -126,6 +112,7 @@
                 </ul>
         </div>
         <hr>
+        <span class="vehicle-tag">02 / multirole fighter</span>
         <h3>су-35с</h3>
         <img class="tankimg" src="https://avatars.mds.yandex.net/i?id=016caf40984c5a6f53491fd4a7669b046bc22105-6307799-images-thumbs&n=13" alt="Су-35С">
         <div class="tankinfo" hidden>
@@ -142,6 +129,7 @@
         </div>
         <hr>
         <h2>Штурмовики</h2>
+        <span class="vehicle-tag">03 / attack aircraft</span>
         <h3>Су-25СМ3</h3>
         <img class="tankimg" src="https://avatars.mds.yandex.net/i?id=3a9e7e9b9176e2f4f4625f1cf95176645ed55d79-6475641-images-thumbs&n=13" alt="Су-25СМ3">
         <div class="tankinfo" hidden>
@@ -197,6 +185,7 @@
                 <label for="name">Твое имя:</label>
                 <br>
                 <input id="name" type="text" placeholder="Имя">
+                <span class="vehicle-tag">03 / attack aircraft</span>
                 <br>
                 <label for="email">email:</label>
                 <br>
