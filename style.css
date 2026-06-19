@@ -121,15 +121,6 @@ img {
     margin-bottom: 20px;
 }
 
-button {
-    display: block;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    border: 0;
-    background: transparent;
-}
-
 img {
     width: min(100%, 500px);
     height: auto;

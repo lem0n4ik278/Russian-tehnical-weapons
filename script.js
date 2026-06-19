@@ -1,6 +1,9 @@
 const scrollTopBtn = document.querySelector("#scrollTopBtn");
 const tankImages = document.querySelectorAll(".tankimg, .vozdushnye-sily img");
 
+let form = document.querySelector("#contactForm");
+let formMessage = document.querySelector("#formMessage");
+
 function toggletankinfo(event) {
     let tankinfoSection = event.currentTarget.nextElementSibling;
 
@@ -25,3 +28,13 @@ if (scrollTopBtn) {
         });
      });
 }
+
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    formMessage.textContent = "Форма отправлена!";
+    formMessage.style.color = "green";
+
+    form.reset();
+});
