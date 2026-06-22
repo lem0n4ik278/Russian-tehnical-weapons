@@ -213,9 +213,9 @@ footer{
     font-size: 26px;
     font-size: 26px;
     line-height: 1;
-    border: 2px solid rgba(255, 255, 255, 0.45);
+    border: 2px solid rgba(255, 229, 173, 0.6);
     border-radius: 50%;
-    background: var(--red);
+    background: linear-gradient(180deg, rgba(36, 143, 136, 0.98), rgba(13, 61, 58, 0.98));
     box-shadow: 0 8px 22px rgba(0, 0, 0, 0.993);
 
 }
@@ -424,6 +424,36 @@ a:hover {
     border-color: rgba(226, 239, 171, 0.6);
 }
 
+button {
+    color: #fff4d6;
+    background: linear-gradient(180deg, rgba(173, 124, 39, 0.96), rgba(101, 60, 11, 0.96));
+    border: 1px solid rgba(255, 204, 112, 0.36);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.34);
+}
+
+button:hover {
+    background: linear-gradient(180deg, rgba(216, 159, 55, 0.98), rgba(126, 74, 15, 0.98));
+    border-color: rgba(255, 229, 173, 0.72);
+}
+
+button:active {
+    background: linear-gradient(180deg, rgba(145, 102, 31, 0.98), rgba(82, 47, 8, 0.98));
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid rgba(255, 229, 173, 0.72);
+    outline-offset: 3px;
+}
+
+button[type="submit"] {
+    border-radius: 999px;
+    min-width: 140px;
+    padding: 12px 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
 .page-intro::before {
     content: "";
     position: absolute;
@@ -483,7 +513,7 @@ a:hover {
 .air-division .vehicle-tag,
 .air-division .tactical-strip span {
     color: #d7ecff;
-    border-color: rgba(123, 186, 255, 0.24);
+    background: linear-gradient(180deg, rgba(86, 107, 55, 0.98), rgba(22, 28, 15, 0.98));
     background: rgba(123, 186, 255, 0.08);
 }
 
@@ -570,11 +600,16 @@ header nav a {
     border-radius: 999px;
     text-transform: uppercase;
     letter-spacing: 0.08em;
+    color: #e5f6ff;
+    background: linear-gradient(180deg, rgba(35, 92, 128, 0.94), rgba(15, 44, 67, 0.94));
+    border-color: rgba(126, 208, 255, 0.32);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22);
 }
 
 .section-nav a:hover,
 header nav a:hover {
-    background: rgba(183, 214, 126, 0.2);
+    background: linear-gradient(180deg, rgba(74, 146, 190, 0.98), rgba(20, 61, 92, 0.98));
+    border-color: rgba(205, 239, 255, 0.72);
 }
 
 .equipment-card:hover::after {

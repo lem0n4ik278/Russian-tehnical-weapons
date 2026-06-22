@@ -30,11 +30,15 @@ if (scrollTopBtn) {
 }
 
 
-form.addEventListener("submit", function(event) {
-    event.preventDefault();
+if (form) {
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
 
-    formMessage.textContent = "Форма отправлена!";
-    formMessage.style.color = "green";
+        if (formMessage) {
+            formMessage.textContent = "Форма отправлена!";
+            formMessage.style.color = "green";
+        }
 
-    form.reset();
-});
+        form.reset();
+    });
+}
